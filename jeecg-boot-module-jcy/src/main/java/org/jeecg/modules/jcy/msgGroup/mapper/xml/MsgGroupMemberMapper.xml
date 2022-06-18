@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.jcy.msgGroup.mapper.MsgGroupMemberMapper">
+
+	<delete id="deleteByMainId" parameterType="java.lang.String">
+		DELETE 
+		FROM  common_custom_group_member 
+		WHERE
+			 group_id = #{id} 		
+	</delete>
+	
+	<select id="selectByMainId" parameterType="java.lang.String" resultType="org.jeecg.modules.jcy.msgGroup.entity.MsgGroupMember">
+		SELECT * 
+		FROM  common_custom_group_member
+		WHERE
+			 group_id = #{id} 		
+	</select>
+</mapper>

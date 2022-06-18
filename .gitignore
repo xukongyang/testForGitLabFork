@@ -1,3 +1,14 @@
+## ide
+**/.idea
+*.iml
+
+## backend
+**/target
+**/logs
+
+## front
+**/*.lock
+
 # Compiled class file
 *.class
 
